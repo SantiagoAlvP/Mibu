@@ -1,42 +1,25 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    background-image: url('PPT Garmex V4 (1)_page-0002_cleanup-2_cleanup-2.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Cubre todo el área del fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* No se repite la imagen de fondo */
+    height: 100vh; /* Establece la altura del cuerpo al 100% del viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* Color del texto en el cuerpo */
+    font-family: 'Arial', sans-serif; 
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+.contenedor-imagen {
+    text-align: center; /* Centra horizontalmente la imagen */
 }
 
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-section {
-    padding: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.contenedor-imagen img {
+    max-width: 50%; /* La imagen no superará el ancho del contenedor */
+    max-height: 50%; /* La imagen no superará la altura del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
 }
